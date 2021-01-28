@@ -1,9 +1,7 @@
-doctype html
-html
-  head
-    meta(charset='utf-8')
+extends ./layout.pug
+block title
     title Turn game
-    header Turn game
+block content
     form#start-screen
       input#name-input(placeholder='Input hero name', autofocus)
       button#start Start
@@ -31,5 +29,3 @@ html
         span#monster-name
         span#monster-hp
         span#monster-att
-    footer Copyright Jeo. All right reserved.
-    script(src='turn.js')
