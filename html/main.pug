@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Turn game
+    header Turn game
+    form#start-screen
+      input#name-input(placeholder='Input hero name', autofocus)
+      button#start Start
+    #screen
+      #hero-stat
+        span#hero-name
+        span#hero-level
+        span#hero-hp
+        span#hero-xp
+        span#hero-att
+      form#game-menu(style='display:none;')
+        #menu-1 1.Adventure
+        #menu-2 2.Rest
+        #menu-3 3.Exit
+        input#menu-input(name='menuInput')
+        button#menu-button Iput
+      form#battle-menu(style='display:none;')
+        #battle-1 1.Attack
+        #battle-2 2.Recovery
+        #battle-3 3.Exit
+        input#battle-input(name='battleInput')
+        button#battle-button Input
+      #message
+      #monster-stat
+        span#monster-name
+        span#monster-hp
+        span#monster-att
+    footer Copyright Jeo. All right reserved.
+    script(src='turn.js')
